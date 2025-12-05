@@ -14,7 +14,14 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.red,
-          title: Text("Sohan Home Page"),
+          title: Text(
+            "Sohan Home Page",
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 25,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
           centerTitle: true,
           leading: Icon(
             Icons.access_time_filled,
@@ -23,16 +30,22 @@ class MyApp extends StatelessWidget {
           ),
           actions: <Widget>[
             IconButton(
-                onPressed: () {},
-                icon: Icon(
-                    Icons.add_a_photo,
-                    color: Colors.white,
-                    size: 50,
-
-                ),),
+              onPressed: () {},
+              icon: Icon(Icons.add_a_photo, color: Colors.white, size: 50),
+            ),
           ],
         ),
-        body: Center(child: Text("Hello Programmer Sohan11")),
+        body: Center(
+          child: Text(
+            "Hello Sohan",
+            style: TextStyle(
+              fontSize: 50,
+              fontWeight: FontWeight.bold,
+              backgroundColor: Colors.green,
+              color: Colors.red,
+            ),
+          ),
+        ),
       ),
     );
   }
