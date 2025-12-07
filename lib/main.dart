@@ -11,17 +11,22 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:Scaffold (
+      home: Scaffold(
         backgroundColor: Colors.blueAccent,
-        body:SafeArea(
-          child:Center(
-            child: Text(
-              "Hello Sohan",
-              style: TextStyle(
-                fontSize: 50,
-                fontWeight: FontWeight.bold,
-                backgroundColor: Colors.green,
-                color: Colors.red,
+        body: SafeArea(
+          child: Center(
+            child: Container(
+              height: 300,
+              width: 300,
+              color: Colors.yellow,
+              child: Text(
+                "Hello Sohan",
+                style: TextStyle(
+                  fontSize: 50,
+                  fontWeight: FontWeight.bold,
+                  backgroundColor: Colors.green,
+                  color: Colors.red,
+                ),
               ),
             ),
           ),
