@@ -15,17 +15,27 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blueAccent,
         body: SafeArea(
           child: Center(
+
             child: Container(
-              height: 300,
-              width: 300,
-              color: Colors.yellow,
-              child: Text(
-                "Hello Sohan",
-                style: TextStyle(
-                  fontSize: 50,
-                  fontWeight: FontWeight.bold,
-                  backgroundColor: Colors.green,
-                  color: Colors.red,
+                color: Colors.white,
+              child: Container(
+                margin: EdgeInsets.all(20),
+                padding: EdgeInsets.all(20),
+                height: 300,
+                width: 350,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                        color: Colors.green
+                ),
+               // color: Colors.yellow,
+                child: Text(
+                  "Hello Sohan",
+                  style: TextStyle(
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
+
+                    color: Colors.red,
+                  ),
                 ),
               ),
             ),
