@@ -14,31 +14,39 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blueAccent,
         body: SafeArea(
-          child: Center(
-
-            child: Container(
-                color: Colors.white,
-              child: Container(
-                margin: EdgeInsets.all(20),
-                padding: EdgeInsets.all(20),
-                height: 300,
-                width: 350,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30),
-                        color: Colors.green
-                ),
-               // color: Colors.yellow,
-                child: Text(
-                  "Hello Sohan",
-                  style: TextStyle(
-                    fontSize: 50,
+          child: Column(
+            //mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                  height: 150,
+                  width: 150,
+                  color: Colors.white,
+                child: Text("Hello Sohan",style: TextStyle(
+                    fontSize:20,
                     fontWeight: FontWeight.bold,
-
-                    color: Colors.red,
-                  ),
-                ),
+                ),),
               ),
-            ),
+              Container(
+                height: 150,
+                width: 150,
+                color: Colors.green,
+                child: Text("Hello Sohan",style: TextStyle(
+                  fontSize:20,
+                  fontWeight: FontWeight.bold,
+                ),),
+              ),
+              Container(
+                height: 150,
+                width: 150,
+                color: Colors.red,
+                child: Text("Hello Sohan",style: TextStyle(
+                  fontSize:20,
+                  fontWeight: FontWeight.bold,
+                ),),
+              ),
+            ],
           ),
         ),
       ),
